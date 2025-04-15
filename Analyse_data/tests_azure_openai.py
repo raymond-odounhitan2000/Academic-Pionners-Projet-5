@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 openai.api_type = "azure"
-openai.api_base = os.getenv("endpoints")
+openai.api_base = os.getenv("ENDPOINT")
 openai.api_key = os.getenv("API_KEY")
 openai.api_version = os.getenv("API_VERSION")
 
